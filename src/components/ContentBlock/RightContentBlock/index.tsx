@@ -11,6 +11,13 @@ import {
   ButtonWrapper,
 } from "./styles";
 
+// @ts-ignore
+import { AwesomeButton } from "react-awesome-button";
+
+// @ts-ignore
+import AwesomeButtonStyles from "react-awesome-button/src/styles/styles.scss";
+
+
 const RightBlock = ({
   title,
   content,
@@ -18,6 +25,7 @@ const RightBlock = ({
   icon,
   t,
   id,
+  weblink,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -33,6 +41,15 @@ const RightBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              <AwesomeButton
+                          cssModule={AwesomeButtonStyles}
+                          type="primary"
+                          size="large"
+                          ripple="true"
+                          href={t(weblink)}
+                          >
+                          {t(button)}
+                          </AwesomeButton>
               <ButtonWrapper>
                 {typeof button === "object" &&
                   button.map((item: any, id: number) => {

@@ -36,9 +36,9 @@ export const CustomNavLink = styled("div")`
 export const ContactWrapper = styled("div")<any>`
   cursor: pointer;
   width: ${(p) => (p.width ? "100%" : "110px")};
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  border-radius: 1.25rem;
+  border-radius: 1.15rem;
   display: inline-block;
 `;
 
@@ -61,16 +61,16 @@ export const NotHidden = styled("div")`
 `;
 
 export const Menu = styled("h5")`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #18216d;
   transition: color 0.2s ease-in;
-  margin: 0.5rem 2rem;
+  margin: 0.1rem 1.2rem;
 
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;

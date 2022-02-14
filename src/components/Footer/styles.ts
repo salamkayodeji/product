@@ -7,7 +7,7 @@ export const FooterSection = styled("footer")`
 `;
 
 export const Title = styled("h4")`
-  font-size: 22px;
+  font-size: 20px;
   text-transform: capitalize;
   color: #18216d;
 

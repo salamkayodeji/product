@@ -11,6 +11,16 @@ import {
   MinTitle,
   MinPara,
 } from "./styles";
+// @ts-ignore
+import { AwesomeButton } from "react-awesome-button";
+
+// @ts-ignore
+import AwesomeButtonStyles from "react-awesome-button/src/styles/styles.scss";
+
+
+
+
+
 
 const LeftContentBlock = ({
   icon,
@@ -19,6 +29,9 @@ const LeftContentBlock = ({
   section,
   t,
   id,
+  button,
+  weblink
+  
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
@@ -27,9 +40,10 @@ const LeftContentBlock = ({
           <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col>
+
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <h4>{t(title)}</h4>
               <Content>{t(content)}</Content>
               <ServiceWrapper>
                 <Row justify="space-between">
@@ -37,12 +51,22 @@ const LeftContentBlock = ({
                     section.map((item: any, id: number) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{t(item.title)}</MinTitle>
                           <MinPara>{t(item.content)}</MinPara>
                         </Col>
                       );
                     })}
+                        <AwesomeButton
+                          cssModule={AwesomeButtonStyles}
+                          type="primary"
+                          size="large"
+                          ripple="true"
+                          href= {t(weblink)}
+                          >
+                          {t(button)}
+                          </AwesomeButton>
+
+
                 </Row>
               </ServiceWrapper>
             </ContentWrapper>

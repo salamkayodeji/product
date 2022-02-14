@@ -52,30 +52,27 @@ const Footer = ({ t }: any) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+              <a href="https://www.coinmac.org/contact/">
+              <Chat>{t("Tell us everything")}</Chat>
+              </a>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:info@coinmac.org">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
-                {t("Application Security")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
-              </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large left="true" to="/">
+              <a href="https://tawk.to/chat/5eda42af4a7c62581799fe3f/default">
                 {t("Support Center")}
+              </a>
               </Large>
               <Large left="true" to="/">
+              <a href="https://tawk.to/chat/5eda42af4a7c62581799fe3f/default">
                 {t("Customer Support")}
+                </a>
               </Large>
             </Col>
           </Row>
@@ -83,45 +80,22 @@ const Footer = ({ t }: any) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>Suite 209 Bolingo Hotels and Towers,</Para>
+              <Para>Central Business District,</Para>
+              <Para>Abuja, Nigeria</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
+              <Large left="true" to="">
+              <a href="https://www.coinmac.org/about/">
                 {t("About")}
+              </a>
               </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
+              <Large left="true" to="">
+              <a href="https://www.coinmac.org/people/">
+                {t("People")}
+              </a>
               </Large>
-              <Large left="true" to="/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
             </Col>
           </Row>
         </Container>
@@ -136,7 +110,7 @@ const Footer = ({ t }: any) => {
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
-                  src="logo.svg"
+                  src="logo.png"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
@@ -145,27 +119,18 @@ const Footer = ({ t }: any) => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href="https://web.facebook.com/coinmacltd"
+                src="facebook.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
+                href="https://twitter.com/coinmacltd"
                 src="twitter.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
+                href="https://www.instagram.com/coinmacintl/"
+                src="instagram.svg"
               />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
+              
             </FooterContainer>
           </Row>
         </Container>

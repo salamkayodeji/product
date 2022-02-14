@@ -1,0 +1,25 @@
+{
+    "title": "Software Developement",
+    "text": "We build professional applications for businesses and organizations. Our projects are reputably known to be highly interactive and responsive to any device i.e. desktop, tablet mobile phones. Our state-of-the-art applications are designed with the standard best practices, technology and security. Our Software Development team is a crop of renowned Software Engineers who have undertaken numerous high level projects.",
+    "section": [
+      {
+        "title": "E-Portal System",
+        "content": "Our E-Portal Systems can be used to power your schools, hospitals, clubs, agencies, groups, and organizations where an integrated system organizes every activity into one central platform. Registration, bookings, messaging, payments and reports can be accessed used our numerous e-portal web applications.",
+        "icon": "notes.svg"
+      },
+      {
+        "title": "Document and Records Management",
+        "content": "We have built software’s and applications which are effective and efficient in management of files and documents in your office. Making the movement and transfer of files both internally and externally. Let our i-robots do the dispatches and pickups of file, storing and retrieving your files with accuracy and a tremendous speed.",
+        "icon": "notes.svg"
+      },
+      {
+        "title": "Data Warehousing",
+        "content": "Our reliable servers and cloud hosted infrastructures is dependable and accommodating in making sure that your enterprise system data/information are kept secured and backup. Easily perform your analytics, reporting and data mining from our reservoir of enterprise data warehouse.",
+        "icon": "notes.svg"
+      }
+
+    ],
+    "button": "Click me!",
+    "weblink": "https://coinmac.org/security"
+  }
+  
