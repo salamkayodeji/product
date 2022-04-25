@@ -11,6 +11,7 @@ import Software from "../../content/Software.json"
 import Network from "../../content/Network.json"
 import Hardware from "../../content/Hardware.json"
 import Digital from "../../content/Digital.json"
+import Training from "../../content/Training.json"
 import Awesome from "../../components/Awesome";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -29,6 +30,15 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
+      />
+      <ContentBlock
+        type="left"
+        title={Training.title}
+        content={Training.text}
+        button={Training.button}
+        weblink={Training.weblink}
+        icon="training.jpeg"
+        id="training"
       />
       <ContentBlock
         type="right"

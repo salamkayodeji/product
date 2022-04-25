@@ -2,7 +2,6 @@ import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 //import Tilt from '../../src';
-import Tilt from 'react-parallax-tilt';
 //import imgNyc from './img/nyc.jpg';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 
@@ -74,6 +73,18 @@ export default function Awesome() {
       id: 
         "4",
       icon: 
+        "https://coinmac.org/static/img/internationalbanner.jpg",
+      title: 
+        "COINMAC TRAINING",
+      desc:
+        "COINMAC is an accredited trainer and certified by agencies in different parts of the world.",
+      img:
+        "https://coinmac.org/static/img/internationalbanner.jpg"
+    },
+    {
+      id: 
+        "5",
+      icon: 
         "https://coinmac.org/static/img/bulletin-board.jpg",
       title: 
         "",
@@ -82,17 +93,9 @@ export default function Awesome() {
       img:
         "https://coinmac.org/static/img/bulletin-board.jpg"
     }
+
   ];
   return (
-    <Tilt
-    className="tilt-img"
-    tiltMaxAngleX={35}
-    tiltMaxAngleY={35}
-    perspective={900}
-    scale={1.1}
-    transitionSpeed={2000}
-    gyroscope={true}
-    >
 
     <div className="App">
 
@@ -119,7 +122,6 @@ export default function Awesome() {
         ))}
       </AutoplaySlider>
     </div>
-    </Tilt>
 
   );
 }
